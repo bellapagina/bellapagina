@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <a href="button.html">Easter Egg</a>
+    <h1 id="mioelemento" style="margin-top: 400px; text-align: center; font-family: Arial, sans-serif; color: #444; font-size: 75px;" class="animate__animated animate__fadeIn">Animate!</h1>
+</body>
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+
+        setTimeout(function() {
+            $( "#mioelemento" ).removeClass( "animate__animated animate__fadeIn" );
+            $( "#mioelemento" ).addClass( "animate__animated animate__fadeOut" );
+        }, 3000);
+
+    });
+
+</script>
+
+</html>
